@@ -17,7 +17,7 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     }
 
 
-    inner class ViewHolder(val binding: ): RecyclerView.ViewHolder(binding.root)
+    inner class ViewHolder(val binding: ItemLayoutBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
